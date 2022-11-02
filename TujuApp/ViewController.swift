@@ -12,8 +12,6 @@ import FloatingPanel
 import SnapKit
 import UserNotifications
 
-
-
 class ViewController: UIViewController, GMSMapViewDelegate, PanelViewControllerDelegate {
     
     let mapView = GMSMapView(frame: .zero)

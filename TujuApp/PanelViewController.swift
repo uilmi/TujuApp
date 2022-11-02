@@ -23,7 +23,7 @@ class PanelViewController: UIViewController, UITextFieldDelegate, AsalEntryViewC
     
     let mapView = GMSMapView(frame: .zero)
     
-    private let asalField: UITextField = {
+    var asalField: UITextField = {
         let field = UITextField()
         field.placeholder = "Asal: Pilih Stasiun Asal"
         field.layer.cornerRadius = 9
@@ -34,7 +34,7 @@ class PanelViewController: UIViewController, UITextFieldDelegate, AsalEntryViewC
         return field
     }()
     
-    private let tujuanField: UITextField = {
+    var tujuanField: UITextField = {
         let field = UITextField()
         field.placeholder = "Tujuan: Pilih Stasiun Tujuan"
         field.layer.cornerRadius = 9
@@ -46,7 +46,7 @@ class PanelViewController: UIViewController, UITextFieldDelegate, AsalEntryViewC
     }()
     
     
-    private let startBtn: UIButton = {
+    let startBtn: UIButton = {
         let button = UIButton()
         button.backgroundColor = .systemOrange
         button.layer.cornerRadius = 20

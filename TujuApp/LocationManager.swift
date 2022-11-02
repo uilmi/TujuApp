@@ -47,6 +47,7 @@ class LocationManager: NSObject {
                 }
                 
                 
+                
                 print("\n\(place)\n\n")
                 
                 let result = Location(
